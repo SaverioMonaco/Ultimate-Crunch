@@ -4,12 +4,7 @@ An Anki deck to drill Japanese verb conjugation: about 600 JLPT N5–N3 verbs an
 
 Each card shows a verb in its dictionary form and asks for one conjugation:
 
-```
-食べる → ______  (polite, negative)
-Does not eat
-```
-
-The back shows the answer (with furigana and audio) and, when one exists, a real example sentence that uses that exact form.
+**TODO: Insert Images**
 
 ---
 
@@ -146,3 +141,9 @@ If you just downloaded the deck, edit the same block directly in Anki: it is at 
 ## Contributing
 
 Found a wrong conjugation, a bad example sentence or a missing verb? Open an issue or a pull request.
+
+## TODO
+
+* Add explanations of verb conjugations
+* AnkiWeb link
+* Release?
