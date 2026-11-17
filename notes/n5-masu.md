@@ -1,6 +1,6 @@
 # Polite (ます形[けい])
 
-The polite form: the verb's i-sound + ます. 食[た]べる → 食[た]べます, 書[か]く → 書[か]きます.
+The polite form: ichidan verbs drop る, godan verbs take their i-sound, + ます. 食[た]べる → 食[た]べます, 書[か]く → 書[か]きます.
 
 #### Meaning
 

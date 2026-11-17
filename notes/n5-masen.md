@@ -1,6 +1,6 @@
 # Polite negative (ません)
 
-The polite negative: the verb's i-sound + ません. 食[た]べる → 食[た]べません, 書[か]く → 書[か]きません.
+The polite negative: ichidan verbs drop る, godan verbs take their i-sound, + ません. 食[た]べる → 食[た]べません, 書[か]く → 書[か]きません.
 
 #### Meaning
 

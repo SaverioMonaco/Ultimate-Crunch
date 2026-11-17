@@ -1,6 +1,6 @@
 # Negative (ない形[けい])
 
-The plain negative: the verb's a-sound + ない. 食[た]べる → 食[た]べない, 書[か]く → 書[か]かない.
+The plain negative: ichidan verbs drop る, godan verbs take their a-sound, + ない. 食[た]べる → 食[た]べない, 書[か]く → 書[か]かない.
 
 #### Meaning
 
