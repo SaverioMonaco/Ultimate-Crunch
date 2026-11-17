@@ -46,13 +46,12 @@ ROOT = Path(__file__).resolve().parent.parent
 TEMPLATES = ROOT / "templates"
 EXAMPLES = ROOT / "data" / "examples.json"
 
-FIELDS = ["Sentence", "SentenceMod", "Translation", "Audio", "JLPT", "Instruction", "Topic",
+FIELDS = ["Sentence", "SentenceMod", "Translation", "Audio", "JLPT", "Topic",
           "Example", "ExampleTranslation", "ExampleAudio", "ExampleSrc", "VerbType", "Conjugation", "Recognition", "Explanation", "Key"]
 # Fields this script owns; Audio and ExampleAudio belong to add_audio.py,
 # Explanation to push_explanations.py.
 OWNED = [f for f in FIELDS if f not in ("Audio", "ExampleAudio", "Explanation")]
 
-INSTRUCTION = '<span style="color: rgb(102, 102, 102);">Conjugation Exercise</span>'
 TOPIC = {"v1": "一段動詞", "vk": "不規則動詞 (来る)", "vs-i": "不規則動詞 (する)",
          "v5k-s": "五段動詞 (行く)", "v5r-i": "五段動詞 (ある)", "v5u-s": "五段動詞 (問う)",
          "v5aru": "五段動詞 (いらっしゃる)", "vs-s": "五段動詞 (〜する like 〜す)"}
@@ -126,7 +125,6 @@ def build():
                 "SentenceMod": f.mod,
                 "Translation": v.english(key),
                 "JLPT": str(level),
-                "Instruction": INSTRUCTION,
                 "Topic": TOPIC.get(v.cls, "五段動詞" if v.cls.startswith("v5") else v.cls),
                 "VerbType": verb_type(v.cls),
                 "Conjugation": steps_html(v, key),

@@ -68,11 +68,13 @@ Japanese verbs fall into three groups, and the group decides how a verb conjugat
 
 | Source | What it gives | License |
 |--------|---------------|---------|
-| [open-anki-jlpt-decks](https://github.com/jamsinclair/open-anki-jlpt-decks) (based on [tanos.co.uk](http://www.tanos.co.uk/jlpt/)) | JLPT level, spelling, reading, English gloss | see the repository |
+| [open-anki-jlpt-decks](https://github.com/jamsinclair/open-anki-jlpt-decks), via [jlpt-anki-decks](https://github.com/chyyran/jlpt-anki-decks), from the lists by Jonathan Waller at tanos.co.uk | JLPT level, spelling, reading, English gloss | MIT; WTFPL; CC BY (tanos, see below) |
 | [JMdict](https://www.edrdg.org/jmdict/j_jmdict.html) via [jmdict-simplified](https://github.com/scriptin/jmdict-simplified) | verb class (る/う/irregular), transitivity | CC BY-SA 4.0 |
 | [Tatoeba](https://tatoeba.org) | example sentences, translations, recordings | CC BY 2.0 FR (recordings: per contributor) |
 
 Each example sentence links back to its Tatoeba page; recorded audio is credited with its author and license on the card.
+
+The JLPT word lists go back to Jonathan Waller's tanos.co.uk, the long-standing reference for JLPT vocabulary. The site is no longer online; to the best of our knowledge its lists were shared under a Creative Commons Attribution (CC BY) license, and all credit for them goes to their author.
 
 ### Audio
 

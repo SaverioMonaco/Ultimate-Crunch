@@ -2,7 +2,6 @@
   <div class="jlpt">{{#JLPT}}JLPT: N{{JLPT}}{{/JLPT}}</div>
   <div class="topic">{{#Topic}}{{Topic}}{{/Topic}}</div>
 </div>
-<div class="instruction">{{Instruction}}</div>
 <div class="sentence"><span id="sm">{{Sentence}}</span>{{#SentenceMod}}<span
     class="modifier">({{SentenceMod}})</span>{{/SentenceMod}}</div>
 {{#Translation}}<div class="translation">{{Translation}}</div>{{/Translation}}
@@ -15,8 +14,12 @@
   {{#ExampleSrc}}<small class="source">{{ExampleSrc}}</small>{{/ExampleSrc}}
 </div>{{/Example}}
 {{Explanation}}
-{{#Conjugation}}<details class="explanation"><summary>How to conjugate</summary>{{Conjugation}}</details>{{/Conjugation}}
-{{#Recognition}}<details class="explanation"><summary>How to recognize {{VerbType}}</summary>{{Recognition}}</details>{{/Recognition}}
+{{#Conjugation}}<details class="explanation">
+  <summary>How to conjugate</summary>{{Conjugation}}
+</details>{{/Conjugation}}
+{{#Recognition}}<details class="explanation">
+  <summary>How to recognize {{VerbType}}</summary>{{Recognition}}
+</details>{{/Recognition}}
 
 <script>
   (function () {
