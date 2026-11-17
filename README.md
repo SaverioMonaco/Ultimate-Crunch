@@ -152,5 +152,4 @@ Found a wrong conjugation, a bad example sentence or a missing verb? Open an iss
 
 ## TODO
 
-* AnkiWeb link
-* Release?
+* Release
