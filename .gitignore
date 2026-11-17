@@ -1,4 +1,20 @@
+# Raw sources (script/download.sh)
 data/raw/
+
+# Python
 __pycache__/
+*.py[cod]
 *.egg-info/
+build/
+dist/
 .venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# LaTeX: keep only the .tex source and the .svg
+tex/*
+!tex/*.tex
+!tex/*.svg

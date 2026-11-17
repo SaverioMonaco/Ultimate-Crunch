@@ -1,0 +1,76 @@
+% Flowchart: is a verb ichidan, godan or irregular?
+% Build: lualatex n5-verbclassification.tex
+\documentclass[border=0pt]{standalone}
+\usepackage{luatexja-fontspec}
+\usepackage{luatexja-ruby}
+\usepackage{tikz}
+\usetikzlibrary{positioning, arrows.meta, backgrounds}
+
+\setmainfont{Noto Sans CJK JP}
+\setmainjfont{Noto Sans CJK JP}
+
+\definecolor{bg}{HTML}{2F2F31}
+\definecolor{fg}{HTML}{FFFFFF}
+\definecolor{dim}{HTML}{B0B0B0}
+\definecolor{box}{HTML}{3C3C3F}
+\definecolor{line}{HTML}{6A6A6E}
+\definecolor{accent}{HTML}{4FC3F7}
+\definecolor{godan}{HTML}{F5A65B}
+\definecolor{ichidan}{HTML}{6FD3A0}
+\definecolor{irreg}{HTML}{F28B82}
+
+% \rb{漢字}{かな}: furigana
+\newcommand{\rb}[2]{\ruby{#1}{#2}}
+\newcommand{\ex}[1]{{\small\color{dim}#1}}
+
+\begin{document}
+\begin{tikzpicture}[
+	font=\normalsize, color=fg, line width=0.8pt,
+	show background rectangle,
+	background rectangle/.style={fill=bg, draw=none},
+	inner frame sep=8mm,
+	node distance=11mm and 14mm,
+	q/.style={draw=line, fill=box, rounded corners=3pt, align=center,
+			text width=50mm, inner sep=7pt},
+	a/.style={draw=#1, fill=box, rounded corners=3pt, align=center,
+			text width=50mm, inner sep=7pt, line width=1.4pt},
+	arr/.style={-{Stealth[length=2.6mm]}, draw=line},
+	lbl/.style={font=\small, color=dim, fill=bg, inner sep=2pt, align=center},
+	]
+
+	% Questions, top to bottom
+	\node[q] (start) {Take the verb in its\\ \textbf{dictionary form}\\ \ex{\rb{食}{た}べる, \rb{書}{か}く, する}};
+	\node[q, below=of start] (q1) {Is it \textbf{する} or \textbf{\rb{来}{く}る}?};
+	\node[q, below=of q1] (q2) {Does it end in \textbf{る}?};
+	\node[q, below=of q2] (q3) {What is the sound\\ \textbf{just before る}?};
+
+	% Answers, on the right
+	\node[a=irreg, right=of q1] (irr) {\textbf{\color{irreg}Irregular} \ \rb{不規則}{ふきそく}\rb{動詞}{どうし}\\
+		\ex{and noun + する: \rb{勉強}{べんきょう}する}};
+	\node[a=godan, right=of q2] (g1) {\textbf{\color{godan}Godan} \ \rb{五段}{ごだん}\rb{動詞}{どうし}\\
+		\ex{う く ぐ す つ ぬ ぶ む\\ \rb{会}{あ}う, \rb{書}{か}く, \rb{読}{よ}む}};
+	\node[a=godan, below=14mm of q3] (g2) {\textbf{\color{godan}Godan} \ \rb{五段}{ごだん}\rb{動詞}{どうし}\\
+		\ex{\rb{分}{わ}かる, \rb{作}{つく}る, \rb{乗}{の}る}};
+	\node[a=ichidan, right=of q3] (ich) {\textbf{\color{ichidan}Ichidan} \ \rb{一段}{いちだん}\rb{動詞}{どうし}\\
+	\ex{\rb{見}{み}る, \rb{起}{お}きる, \rb{食}{た}べる}\\
+	{\small\color{fg}unless it is an exception ↓}};
+
+	% Exceptions
+	\node[draw=ichidan, dashed, rounded corners=3pt, fill=box, align=left,
+		inner sep=8pt, below=10mm of g2.south west, anchor=north west,
+		text width=114mm] (exc) {%
+		\textbf{Exceptions:} some verbs end in -iru / -eru but are \textbf{\color{godan}godan}.\\
+		See the \textbf{table of exceptions}.\\[2pt]
+		\ex{Check with the ない-form: \rb{帰}{かえ}る → \rb{帰}{かえ}\textbf{ら}ない, \rb{食}{た}べる → \rb{食}{た}べない}};
+
+	% Arrows
+	\draw[arr] (start) -- (q1);
+	\draw[arr] (q1) -- node[lbl] {no} (q2);
+	\draw[arr] (q2) -- node[lbl] {yes} (q3);
+	\draw[arr] (q1) -- node[lbl] {yes} (irr);
+	\draw[arr] (q2) -- node[lbl] {no} (g1);
+	\draw[arr] (q3) -- node[lbl] {a, u, o \ \ex{(-aru -uru -oru)}} (g2);
+	\draw[arr] (q3) -- node[lbl] {i, e} (ich);
+	\draw[arr, dashed, draw=ichidan] (ich) -- (exc.north -| ich);
+\end{tikzpicture}
+\end{document}
