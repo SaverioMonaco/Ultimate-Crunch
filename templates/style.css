@@ -126,6 +126,59 @@ rt {
   margin-top: 0.4em;
 }
 
+/* Explanation (from notes/*.md): collapsed at the bottom of the back */
+.explanation {
+  margin: 1em 0 0.6em;
+  font-size: 0.75em;
+  line-height: 1.6;
+}
+
+.explanation summary {
+  cursor: pointer;
+  color: #b0b0b0;
+}
+
+.explanation img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0.6em auto;
+}
+
+.explanation h4 {
+  margin: 0.8em 0 0.3em;
+  color: #b0b0b0;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+}
+
+.explanation table {
+  width: 100%;          /* full card width; long cells wrap instead of scrolling */
+  border-collapse: collapse;
+  margin: 0.5em 0;
+}
+
+.explanation th, .explanation td {
+  border: 1px solid #555;
+  padding: 0.25em 0.6em;
+  text-align: left;
+}
+
+/* First column (N5, N4...) as narrow as its content; the rest gets the width */
+.explanation th:first-child, .explanation td:first-child {
+  width: 1%;
+  white-space: nowrap;
+}
+
+.explanation th {
+  color: #b0b0b0;
+  font-weight: normal;
+}
+
+.explanation rt {
+  color: #b0b0b0;
+}
+
 .replay-button svg {
   width: 24px;
   height: 24px;

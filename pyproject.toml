@@ -9,6 +9,7 @@ dependencies = [
     "unidic-lite",
     "requests",
     "edge-tts",
+    "markdown",
 ]
 
 [build-system]

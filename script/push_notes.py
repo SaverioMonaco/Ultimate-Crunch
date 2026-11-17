@@ -4,6 +4,7 @@ What a card is made of:
 - data/verbs.tsv        the verbs (edit by hand), see build_verbs.py
 - script/conjugate.py   the forms, their indications and English
 - data/examples.json    the Tatoeba example sentences, see build_examples.py
+- notes/*.md            the Explanation, see push_explanations.py
 - templates/            the card layout (front.html, back.html, style.css)
 
 Each note has a Key field ("食べる|たべる|nai"). Rerunning updates the notes
@@ -42,9 +43,10 @@ TEMPLATES = ROOT / "templates"
 EXAMPLES = ROOT / "data" / "examples.json"
 
 FIELDS = ["Sentence", "SentenceMod", "Translation", "Audio", "JLPT", "Instruction", "Topic",
-          "Example", "ExampleTranslation", "ExampleAudio", "ExampleSrc", "VerbType", "Key"]
-# Fields this script owns; Audio and ExampleAudio belong to add_audio.py.
-OWNED = [f for f in FIELDS if f not in ("Audio", "ExampleAudio")]
+          "Example", "ExampleTranslation", "ExampleAudio", "ExampleSrc", "VerbType", "Explanation", "Key"]
+# Fields this script owns; Audio and ExampleAudio belong to add_audio.py,
+# Explanation to push_explanations.py.
+OWNED = [f for f in FIELDS if f not in ("Audio", "ExampleAudio", "Explanation")]
 
 INSTRUCTION = '<span style="color: rgb(102, 102, 102);">Conjugation Exercise</span>'
 TOPIC = {"v1": "一段動詞", "vk": "不規則動詞 (来る)", "vs-i": "不規則動詞 (する)",
