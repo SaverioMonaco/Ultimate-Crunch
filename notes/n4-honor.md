@@ -6,8 +6,8 @@
 
 Raises **the person who does the action**: a teacher, a customer, your boss. Never used about yourself:
 
-- 先生[せんせい]が 本[ほん]を **お 書[か]きになる**: The teacher writes a book.
-- 社長[しゃちょう]は 何[なに]を **召[め]し 上[あ]がります**か: What will the president have?
+- いつあなたは**お 帰[かえ]りになる**のか 教[おし]えてください: Please tell me when you are coming back. <a class="src" href="https://tatoeba.org/sentences/show/229042">Tatoeba #229042</a>
+- こちらはあなたが**お 話[はな]しになる**お 方[かた]です: This is the man for you to speak to. <a class="src" href="https://tatoeba.org/sentences/show/224157">Tatoeba #224157</a>
 
 #### Tone
 

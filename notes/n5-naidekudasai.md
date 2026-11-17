@@ -6,8 +6,8 @@ The negative request: the ない form + でください. 食[た]べる → 食[
 
 Asking someone **not** to do something:
 
-- ここで 写真[しゃしん]を **撮[と]らないでください**: Please don't take pictures here. (rule)
-- 心配[しんぱい] **しないでください**: Please don't worry. (reassurance)
+- 芝生[しばふ]に**入[はい]らないでください**: Keep off the grass. (rule) <a class="src" href="https://tatoeba.org/sentences/show/149270">Tatoeba #149270</a>
+- 心配[しんぱい]**しないでください**: Don't worry. (reassurance) <a class="src" href="https://tatoeba.org/sentences/show/2349145">Tatoeba #2349145</a>
 
 #### Tone
 

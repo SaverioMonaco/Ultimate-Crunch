@@ -6,8 +6,8 @@ Godan verbs take their a-sound + れる, ichidan verbs drop る + られる. 書
 
 Something **is done** to the subject. Often the subject suffers it (the "suffering passive"):
 
-- この 本[ほん]は 多[おお]くの 人[ひと]に **読[よ]まれる**: This book is read by many people.
-- 電車[でんしゃ]で 足[あし]を **踏[ふ]まれた**: Someone stepped on my foot on the train. (suffering)
+- 紙[かみ]は 木[き]から**作[つく]られる**: Paper is made from wood. <a class="src" href="https://tatoeba.org/sentences/show/151205">Tatoeba #151205</a>
+- カナダでは、英語[えいご]が**話[はな]される**: English is spoken in Canada. <a class="src" href="https://tatoeba.org/sentences/show/226312">Tatoeba #226312</a>
 
 #### Tone
 

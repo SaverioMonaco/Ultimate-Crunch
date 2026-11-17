@@ -72,7 +72,7 @@ Japanese verbs fall into three groups, and the group decides how a verb conjugat
 | [JMdict](https://www.edrdg.org/jmdict/j_jmdict.html) via [jmdict-simplified](https://github.com/scriptin/jmdict-simplified) | verb class (る/う/irregular), transitivity | CC BY-SA 4.0 |
 | [Tatoeba](https://tatoeba.org) | example sentences, translations, recordings | CC BY 2.0 FR (recordings: per contributor) |
 
-Each example sentence links back to its Tatoeba page; recorded audio is credited with its author and license on the card.
+Each example sentence (on the card and in the explanations in [`notes/`](notes/)) links back to its Tatoeba page; recorded audio is credited with its author and license on the card.
 
 The JLPT word lists go back to Jonathan Waller's tanos.co.uk, the long-standing reference for JLPT vocabulary. The site is no longer online; to the best of our knowledge its lists were shared under a Creative Commons Attribution (CC BY) license, and all credit for them goes to their author.
 
@@ -152,6 +152,5 @@ Found a wrong conjugation, a bad example sentence or a missing verb? Open an iss
 
 ## TODO
 
-* Add explanations of verb conjugations
 * AnkiWeb link
 * Release?

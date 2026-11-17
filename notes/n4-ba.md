@@ -6,8 +6,8 @@ Godan verbs take their e-sound + ば, ichidan verbs drop る + れば. 書[か]�
 
 **If**: a condition and what follows from it, often something always true:
 
-- **急[いそ]げば** 間[ま]に 合[あ]う: If you hurry, you'll make it.
-- 春[はる]に **なれば** 桜[さくら]が 咲[さ]く: When spring comes, the cherry trees bloom. (always true)
+- **見[み]れば**わかるよ: You'll understand when you see. <a class="src" href="https://tatoeba.org/sentences/show/175155">Tatoeba #175155</a>
+- **引[ひ]けば**ドアが 開[ひら]きます: You have to pull that door to open it. (always true) <a class="src" href="https://tatoeba.org/sentences/show/189987">Tatoeba #189987</a>
 
 #### Tone
 

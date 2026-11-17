@@ -6,8 +6,8 @@ Godan verbs take their a-sound + せる, ichidan verbs drop る + させる. 書
 
 **Make** or **let** someone do something. The person doing it takes に (or を):
 
-- 母[はは]は 弟[おとうと]に 野菜[やさい]を **食[た]べさせる**: My mother makes my little brother eat vegetables. (make)
-- 子供[こども]を 公園[こうえん]で **遊[あそ]ばせる**: I let the kids play in the park. (let)
+- 彼女[かのじょ]はときどき 妹[いもうと]にレポートを**書[か]かせる**: She sometimes has her sister write her term papers. (make) <a class="src" href="https://tatoeba.org/sentences/show/92001">Tatoeba #92001</a>
+- トムに 牛乳[ぎゅうにゅう]を**飲[の]ませる**な: Don't let Tom drink any milk. (let) <a class="src" href="https://tatoeba.org/sentences/show/7847341">Tatoeba #7847341</a>
 
 #### Tone
 

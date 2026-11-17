@@ -6,8 +6,8 @@ The plain past: built like the て-form, with た / だ in place of て / で. �
 
 A **past** action, already done:
 
-- 昨日[きのう] 映画[えいが]を **見[み]た**: I watched a movie yesterday.
-- もう 宿題[しゅくだい]を **した**: I already did my homework.
+- 窓[まど]を**開[あ]けた**: I opened the window. <a class="src" href="https://tatoeba.org/sentences/show/8553673">Tatoeba #8553673</a>
+- 雪[ゆき]が**降[ふ]った**: It snowed. <a class="src" href="https://tatoeba.org/sentences/show/1552160">Tatoeba #1552160</a>
 
 #### Tone
 

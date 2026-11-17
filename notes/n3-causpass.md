@@ -4,10 +4,9 @@ Godan verbs take their a-sound + される (す verbs: させられる), ichidan
 
 #### Meaning
 
-**Be made to** do something, usually against your will:
+**Be made to** do something, usually against your will. With feelings, **be made to feel**:
 
-- 子供[こども]の 頃[ころ]は 野菜[やさい]を **食[た]べさせられた**: As a child I was made to eat vegetables.
-- 毎日[まいにち] 漢字[かんじ]を **書[か]かされる**: I'm made to write kanji every day.
+- あの 子[こ]には 興奮[こうふん]**させられる**ぜ: That girl just drives me wild. <a class="src" href="https://tatoeba.org/sentences/show/230979">Tatoeba #230979</a>
 
 #### Tone
 

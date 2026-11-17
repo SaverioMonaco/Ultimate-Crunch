@@ -6,8 +6,8 @@ The polite negative: ichidan verbs drop る, godan verbs take their i-sound, + �
 
 A **present** or **future** action that does **not** happen:
 
-- タバコは **吸[す]いません**: I don't smoke. (habit)
-- 今日[きょう]は 会社[かいしゃ]に **行[い]きません**: I won't go to the office today. (future)
+- **歌[うた]いません**: I don't sing. (habit) <a class="src" href="https://tatoeba.org/sentences/show/9082872">Tatoeba #9082872</a>
+- それは**使[つか]いません**: I won't use that. (future) <a class="src" href="https://tatoeba.org/sentences/show/13697787">Tatoeba #13697787</a>
 
 #### Tone
 

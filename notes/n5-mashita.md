@@ -6,8 +6,8 @@ The polite past: ます → ました. 食[た]べます → 食[た]べまし�
 
 A **past** action, already done:
 
-- 昨日[きのう] 映画[えいが]を **見[み]ました**: I watched a movie yesterday.
-- 朝[あさ]ご 飯[はん]を **食[た]べました**: I had breakfast.
+- 映画[えいが]を**見[み]ました**: I watched a movie. <a class="src" href="https://tatoeba.org/sentences/show/10901497">Tatoeba #10901497</a>
+- 指[ゆび]を**切[き]りました**: I just cut my finger. <a class="src" href="https://tatoeba.org/sentences/show/168244">Tatoeba #168244</a>
 
 #### Tone
 

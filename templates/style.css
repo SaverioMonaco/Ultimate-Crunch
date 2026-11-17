@@ -156,6 +156,13 @@ rt {
   margin: 0.4em 0;
 }
 
+/* Tatoeba credit after each example sentence */
+.explanation a.src {
+  font-size: 0.7em;
+  color: #8a8a8a;
+  white-space: nowrap;
+}
+
 .explanation ul {
   padding-left: 1.2em;
 }

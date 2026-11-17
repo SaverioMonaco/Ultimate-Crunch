@@ -6,8 +6,8 @@ The polite past negative: ません + でした. 食[た]べません → 食[�
 
 A **past** action that did **not** happen:
 
-- 昨日[きのう]は 雨[あめ]が **降[ふ]りませんでした**: It didn't rain yesterday.
-- 週末[しゅうまつ]は どこにも **行[い]きませんでした**: I didn't go anywhere at the weekend.
+- 今日[きょう]は 誰[だれ]も**来[き]ませんでした**: No one came today. <a class="src" href="https://tatoeba.org/sentences/show/11005158">Tatoeba #11005158</a>
+- 私[わたし]は 何[なに]も**言[い]いませんでした**: I didn't say anything. <a class="src" href="https://tatoeba.org/sentences/show/2041048">Tatoeba #2041048</a>
 
 #### Tone
 

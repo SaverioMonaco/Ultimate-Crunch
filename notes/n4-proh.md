@@ -6,8 +6,8 @@ The dictionary form + な. 書[か]く → 書[か]くな, 食[た]べる → �
 
 A blunt **don't!**:
 
-- **触[さわ]るな**!: Don't touch!
-- **心配[しんぱい]するな**: Don't worry.
+- 電気[でんき]を**消[け]すな**: Don't turn off the light. <a class="src" href="https://tatoeba.org/sentences/show/124839">Tatoeba #124839</a>
+- 俺[おれ]に**聞[き]くな**よ: Don't ask me. <a class="src" href="https://tatoeba.org/sentences/show/1699655">Tatoeba #1699655</a>
 
 #### Tone
 

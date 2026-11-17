@@ -6,8 +6,8 @@ Ichidan verbs drop る, godan verbs take their i-sound, + たい. 食[た]べる
 
 What **you** want to do (or, in a question, what the listener wants to do):
 
-- 日本[にほん]に **行[い]きたい**: I want to go to Japan.
-- 何[なに]が **食[た]べたい**?: What do you want to eat?
+- 外[そと]へ**出[で]たい**: I want to go outside. <a class="src" href="https://tatoeba.org/sentences/show/184860">Tatoeba #184860</a>
+- 何[なに]**飲[の]みたい**？: What do you want to drink? (question) <a class="src" href="https://tatoeba.org/sentences/show/2633467">Tatoeba #2633467</a>
 
 Not used for what someone else wants: for that, Japanese says 食[た]べたがっている (seems to want to eat).
 

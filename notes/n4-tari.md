@@ -6,8 +6,8 @@ The た form + り. 書[か]く → 書[か]いたり, 食[た]べる → 食[�
 
 **Things like**: a few examples of actions, not a full list. Usually 〜たり〜たりする:
 
-- 週末[しゅうまつ]は 本[ほん]を **読[よ]んだり** 映画[えいが]を **見[み]たり** する: On weekends I do things like reading and watching movies.
-- 雨[あめ]が **降[ふ]ったり** 止[や]んだりする: It rains on and off. (alternating)
+- **歌[うた]ったり**踊[おど]ったりしましょう: Let's sing and dance. <a class="src" href="https://tatoeba.org/sentences/show/186788">Tatoeba #186788</a>
+- 雪[ゆき]が**降[ふ]ったり**やんだりしている: It's been snowing on and off. (alternating) <a class="src" href="https://tatoeba.org/sentences/show/142029">Tatoeba #142029</a>
 
 #### Tone
 

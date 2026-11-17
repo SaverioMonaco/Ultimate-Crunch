@@ -6,8 +6,8 @@
 
 Lowers **yourself** (or your group) when your action concerns someone you respect:
 
-- お 荷物[にもつ]を **お 持[も]ちします**: I'll carry your luggage.
-- お 写真[しゃしん]を **拝見[はいけん]しました**: I looked at your photos.
+- **お 呼[よ]びする**相手方[あいてがた]のお 名前[なまえ]は？: What's the name of the party you're calling? <a class="src" href="https://tatoeba.org/sentences/show/227179">Tatoeba #227179</a>
+- 全[すべ]てを**お 話[はな]しする**ことはできません: I can't tell you everything. <a class="src" href="https://tatoeba.org/sentences/show/1558349">Tatoeba #1558349</a>
 
 #### Tone
 

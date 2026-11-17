@@ -6,8 +6,8 @@ Godan verbs take their o-sound + う, ichidan verbs drop る + よう. 書[か]�
 
 **Let's** (casual), or with と 思[おも]う, **I think I'll**:
 
-- 一緒[いっしょ]に **行[い]こう**: Let's go together. (invitation)
-- 明日[あした]から 運動[うんどう]を **しよう**と 思[おも]う: I think I'll start exercising tomorrow. (intention)
+- さあ**行[い]こう**: Now let's go. (invitation) <a class="src" href="https://tatoeba.org/sentences/show/3506680">Tatoeba #3506680</a>
+- 今日[きょう]は 早[はや]めに**寝[ね]よう**と 思[おも]う: I think I'll go to bed early tonight. (intention) <a class="src" href="https://tatoeba.org/sentences/show/3313205">Tatoeba #3313205</a>
 
 #### Tone
 

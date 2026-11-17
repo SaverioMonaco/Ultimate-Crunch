@@ -6,8 +6,8 @@ Godan verbs take their a-sound, ichidan verbs drop る, + ずに. する → せ
 
 **Without** doing something, then doing the next thing:
 
-- 朝[あさ]ご 飯[はん]を **食[た]べずに** 出[で]かけた: I left without eating breakfast.
-- 辞書[じしょ]を **使[つか]わずに** 読[よ]む: I read without using a dictionary.
+- 夕飯[ゆうはん]を**食[た]べずに**寝[ね]ました: I went to bed without eating dinner. <a class="src" href="https://tatoeba.org/sentences/show/10880148">Tatoeba #10880148</a>
+- 手[て]を**使[つか]わずに**床[ゆか]に 座[すわ]れる？: Can you sit on the floor without using your hands? <a class="src" href="https://tatoeba.org/sentences/show/12018773">Tatoeba #12018773</a>
 
 #### Tone
 

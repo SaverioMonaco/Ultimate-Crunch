@@ -6,8 +6,8 @@ Godan verbs take their e-sound, ichidan verbs drop る + ろ. 書[か]く → �
 
 A blunt **order**:
 
-- 早[はや]く **起[お]きろ**!: Get up already!
-- **止[と]まれ**: Stop. (road sign)
+- 警察[けいさつ]を**呼[よ]べ**！: Call the police! <a class="src" href="https://tatoeba.org/sentences/show/10574448">Tatoeba #10574448</a>
+- おい、**待[ま]て**よ！: Hey, wait up! <a class="src" href="https://tatoeba.org/sentences/show/1321505">Tatoeba #1321505</a>
 
 #### Tone
 

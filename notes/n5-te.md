@@ -6,8 +6,8 @@ The connecting form: ichidan verbs drop る + て, godan verbs change their last
 
 Joins actions in order: **and (then)**. On its own, a casual **please**:
 
-- 朝[あさ]ご 飯[はん]を **食[た]べて**、学校[がっこう]に 行[い]く: I eat breakfast and go to school.
-- ちょっと **待[ま]って**: Wait a moment. (request)
+- 家[いえ]に**帰[かえ]って**寝[ね]たい: I want to go home and sleep. (and then) <a class="src" href="https://tatoeba.org/sentences/show/11092014">Tatoeba #11092014</a>
+- これ**持[も]って**: Hold this. (request) <a class="src" href="https://tatoeba.org/sentences/show/11093841">Tatoeba #11093841</a>
 
 It is also the base of many other forms: ている, てください, てもいい, ...
 

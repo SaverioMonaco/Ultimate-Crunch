@@ -6,8 +6,8 @@ Godan verbs take their e-sound + る, ichidan verbs drop る + られる. 書[�
 
 **Can** do something. The object usually takes が instead of を:
 
-- 漢字[かんじ]が **書[か]ける**: I can write kanji.
-- 刺身[さしみ]が **食[た]べられる**: I can eat sashimi.
+- 歌[うた]が**歌[うた]える**: I can sing. <a class="src" href="https://tatoeba.org/sentences/show/2568069">Tatoeba #2568069</a>
+- 馬[うま]に**乗[の]れる**の？: Can you ride a horse? <a class="src" href="https://tatoeba.org/sentences/show/10246225">Tatoeba #10246225</a>
 
 #### Tone
 

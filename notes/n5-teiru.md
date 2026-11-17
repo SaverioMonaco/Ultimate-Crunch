@@ -6,8 +6,8 @@ The て-form + いる. 食[た]べる → 食[た]べている, 書[か]く → 
 
 An action **in progress**, or a **state** that lasts after a change:
 
-- 今[いま] 本[ほん]を **読[よ]んでいる**: I'm reading a book now. (in progress)
-- 兄[あに]は 結婚[けっこん] **している**: My older brother is married. (state)
+- 雨[あめ]が**降[ふ]っている**: It's raining. (in progress) <a class="src" href="https://tatoeba.org/sentences/show/5212">Tatoeba #5212</a>
+- ここに**住[す]んでいる**: I live here. (state) <a class="src" href="https://tatoeba.org/sentences/show/13252761">Tatoeba #13252761</a>
 
 #### Tone
 

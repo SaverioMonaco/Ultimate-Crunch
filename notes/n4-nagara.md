@@ -6,8 +6,8 @@ Ichidan verbs drop る, godan verbs take their i-sound, + ながら. 書[か]く
 
 Two actions **at the same time**, by the same person. The main action comes last:
 
-- 音楽[おんがく]を **聞[き]きながら** 勉強[べんきょう]する: I study while listening to music.
-- **歩[ある]きながら** 話[はな]そう: Let's talk while we walk.
+- **歩[ある]きながら**本[ほん]を 読[よ]んだ: I read a book as I walked. <a class="src" href="https://tatoeba.org/sentences/show/83211">Tatoeba #83211</a>
+- **食[た]べながら**話[はな]しちゃダメだよ: Don't talk while you're eating. <a class="src" href="https://tatoeba.org/sentences/show/11009755">Tatoeba #11009755</a>
 
 #### Tone
 

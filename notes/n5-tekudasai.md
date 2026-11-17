@@ -6,8 +6,8 @@ The polite request: the て-form + ください. 食[た]べる → 食[た]べ�
 
 Asking someone **to do** something:
 
-- ここに 名前[なまえ]を **書[か]いてください**: Please write your name here. (instruction)
-- ちょっと **待[ま]ってください**: Please wait a moment. (request)
+- 手[て]を**洗[あら]ってください**: Please wash your hands. (instruction) <a class="src" href="https://tatoeba.org/sentences/show/12057959">Tatoeba #12057959</a>
+- また**来[き]てください**: Please come again. (request) <a class="src" href="https://tatoeba.org/sentences/show/195385">Tatoeba #195385</a>
 
 #### Tone
 

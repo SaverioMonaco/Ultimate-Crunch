@@ -6,8 +6,8 @@ The ない form with ない → なければならない. 書[か]く → 書[�
 
 **Must / have to**, literally "if I don't do it, it won't do":
 
-- 明日[あした]は 早[はや]く **起[お]きなければならない**: I have to get up early tomorrow.
-- 毎日[まいにち] 薬[くすり]を **飲[の]まなければならない**: I must take medicine every day.
+- **行[い]かなければならない**: I have to go. <a class="src" href="https://tatoeba.org/sentences/show/173415">Tatoeba #173415</a>
+- 君[きみ]はもう**寝[ね]なければならない**: You must go to bed now. <a class="src" href="https://tatoeba.org/sentences/show/177539">Tatoeba #177539</a>
 
 #### Tone
 

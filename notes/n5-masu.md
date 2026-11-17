@@ -6,8 +6,8 @@ The polite form: ichidan verbs drop る, godan verbs take their i-sound, + ま�
 
 A **present** or **future** action, not yet done:
 
-- 毎朝[まいあさ] コーヒーを **飲[の]みます**: I drink coffee every morning. (habit)
-- 来週[らいしゅう] 京都[きょうと]に **行[い]きます**: I'll go to Kyoto next week. (future)
+- 歌[うた]を**書[か]きます**: I write songs. (habit) <a class="src" href="https://tatoeba.org/sentences/show/13894077">Tatoeba #13894077</a>
+- 来週[らいしゅう]**帰[かえ]ります**: I'm going home next week. (future) <a class="src" href="https://tatoeba.org/sentences/show/1879941">Tatoeba #1879941</a>
 
 #### Tone
 
