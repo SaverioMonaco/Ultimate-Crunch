@@ -41,7 +41,26 @@ If you find an error, please [open an issue](../../issues) or a pull request. Co
 | N4 | 141 | potential (and its negative), volitional, ば and たら conditionals, なければならない, たり, ながら, command, prohibition, passive, causative, honorific and humble (keigo) |
 | N3 | 347 | causative-passive, ずに |
 
-Cards are tagged `UC::N5`, `UC::form::nai`, `UC::verb::N4`, ... so you can filter or suspend by level or form.
+Cards are tagged `UC::N5`, `UC::form::nai`, `UC::verb::N4`, `UC::type::godan`, ... so you can filter or suspend by level, form or verb type.
+The verb type is also in the `VerbType` field and shown on the back of the card (see [Verb types](#verb-types)).
+
+---
+
+## Verb types
+
+Japanese verbs fall into three groups, and the group decides how a verb conjugates:
+
+| Type | On the card | Verbs |
+|------|-------------|-------|
+| Ichidan | 一段動詞 | 197 |
+| Godan | 五段動詞 | 395 |
+| Irregular (Fukisoku) | 不規則動詞 | 4 |
+
+**How the deck tells them apart.** It comes from each verb's class in [JMdict](https://www.edrdg.org/jmdict/j_jmdict.html), stored in the `class` column of [`data/verbs.tsv`](data/verbs.tsv):
+
+- `v1` → ichidan
+- `v5u`, `v5k`, `v5g`, `v5s`, `v5t`, `v5n`, `v5b`, `v5m`, `v5r` → godan (by ending)
+- `vk` (来る), `vs-i` (する, 勉強する) → irregular
 
 ---
 

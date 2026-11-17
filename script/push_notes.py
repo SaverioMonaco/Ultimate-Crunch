@@ -42,14 +42,26 @@ TEMPLATES = ROOT / "templates"
 EXAMPLES = ROOT / "data" / "examples.json"
 
 FIELDS = ["Sentence", "SentenceMod", "Translation", "Audio", "JLPT", "Instruction", "Topic",
-          "Example", "ExampleTranslation", "ExampleAudio", "ExampleSrc", "Key"]
+          "Example", "ExampleTranslation", "ExampleAudio", "ExampleSrc", "VerbType", "Key"]
 # Fields this script owns; Audio and ExampleAudio belong to add_audio.py.
 OWNED = [f for f in FIELDS if f not in ("Audio", "ExampleAudio")]
 
 INSTRUCTION = '<span style="color: rgb(102, 102, 102);">Conjugation Exercise</span>'
-TOPIC = {"v1": "る-verb", "vk": "Irregular (来る)", "vs-i": "Irregular (する)",
-         "v5k-s": "う-verb (行く)", "v5r-i": "う-verb (ある)", "v5u-s": "う-verb (問う)",
-         "v5aru": "う-verb (いらっしゃる)", "vs-s": "う-verb (〜する like 〜す)"}
+TOPIC = {"v1": "一段動詞", "vk": "不規則動詞 (来る)", "vs-i": "不規則動詞 (する)",
+         "v5k-s": "五段動詞 (行く)", "v5r-i": "五段動詞 (ある)", "v5u-s": "五段動詞 (問う)",
+         "v5aru": "五段動詞 (いらっしゃる)", "vs-s": "五段動詞 (〜する like 〜す)"}
+
+
+def verb_type(cls):
+    """JMdict class -> Ichidan / Godan / Irregular. 〜する verbs like 愛する
+    conjugate like 〜す (愛さない), so they count as godan, as in TOPIC."""
+    if cls.startswith("v1"):
+        return "Ichidan"
+    if cls.startswith("v5") or cls == "vs-s":
+        return "Godan"
+    return "Irregular"
+
+
 # Readings unidic picks that are correct but stiff for a learner's deck.
 READING_FIXES = {"私[わたくし]": "私[わたし]", "明日[あす]": "明日[あした]"}
 
@@ -109,11 +121,13 @@ def build():
                 "Translation": v.english(key),
                 "JLPT": str(level),
                 "Instruction": INSTRUCTION,
-                "Topic": TOPIC.get(v.cls, "う-verb" if v.cls.startswith("v5") else v.cls),
+                "Topic": TOPIC.get(v.cls, "五段動詞" if v.cls.startswith("v5") else v.cls),
+                "VerbType": verb_type(v.cls),
                 "Key": k,
                 **example_fields(examples.get(k)),
             }
-            tags = [f"UC::N{level}", f"UC::form::{key}", f"UC::verb::N{v.level}"]
+            tags = [f"UC::N{level}", f"UC::form::{key}", f"UC::verb::N{v.level}",
+                    f"UC::type::{verb_type(v.cls).lower()}"]
             notes.append({"fields": fields, "tags": tags, "order": (-level, FORMS.index(f), i)})
     # New cards come in this order: N5 first, then form by form (all ます
     # cards, then ません...), verbs in list order.
@@ -164,7 +178,7 @@ def main():
     for info in anki("notesInfo", notes=ids) if ids else []:
         existing[info["fields"]["Key"]["value"]] = info
 
-    to_add, updated = [], 0
+    to_add, updated, retag = [], 0, {}
     for n in notes:
         old = existing.pop(n["fields"]["Key"], None)
         if old is None:
@@ -175,10 +189,16 @@ def main():
         if changed:
             anki("updateNoteFields", note={"id": old["noteId"], "fields": changed})
             updated += 1
+        missing_tags = " ".join(t for t in n["tags"] if t not in old["tags"])
+        if missing_tags:
+            retag.setdefault(missing_tags, []).append(old["noteId"])
+    for tags, ids in retag.items():  # one call per tag set, not per note
+        anki("addTags", notes=ids, tags=tags)
+    retagged = sum(map(len, retag.values()))
     for i in range(0, len(to_add), 500):
         anki("addNotes", notes=to_add[i:i + 500])
         print(f"  added {min(i + 500, len(to_add))}/{len(to_add)}")
-    print(f"{len(to_add)} notes added, {updated} updated")
+    print(f"{len(to_add)} notes added, {updated} updated, {retagged} retagged")
     if existing:
         print(f"!! {len(existing)} notes in Anki whose Key is no longer generated (not deleted):")
         for k in list(existing)[:20]:
