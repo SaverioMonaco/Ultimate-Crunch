@@ -1,0 +1,11 @@
+# たり (listing)
+
+
+
+#### Meaning
+
+- 
+- 
+
+#### Tone
+

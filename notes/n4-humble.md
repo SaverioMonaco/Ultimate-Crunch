@@ -1,0 +1,11 @@
+# Humble
+
+
+
+#### Meaning
+
+- 
+- 
+
+#### Tone
+

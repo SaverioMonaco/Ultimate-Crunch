@@ -1,0 +1,11 @@
+# Ongoing (ている)
+
+
+
+#### Meaning
+
+- 
+- 
+
+#### Tone
+

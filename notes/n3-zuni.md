@@ -1,0 +1,11 @@
+# Without (ずに)
+
+
+
+#### Meaning
+
+- 
+- 
+
+#### Tone
+

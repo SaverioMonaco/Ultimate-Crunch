@@ -1,0 +1,11 @@
+# ば-conditional
+
+
+
+#### Meaning
+
+- 
+- 
+
+#### Tone
+

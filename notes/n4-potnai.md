@@ -1,0 +1,11 @@
+# Potential, negative
+
+
+
+#### Meaning
+
+- 
+- 
+
+#### Tone
+

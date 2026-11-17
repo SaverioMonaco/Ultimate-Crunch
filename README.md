@@ -4,7 +4,12 @@ An Anki deck to drill Japanese verb conjugation: about 600 JLPT N5–N3 verbs an
 
 Each card shows a verb in its dictionary form and asks for one conjugation:
 
-**TODO: Insert Images**
+<p align="center">
+  <img src="data/front.png" alt="Card front" width="40%">
+  &nbsp;
+  <img src="data/back.png" alt="Card back" width="40%">
+</p>
+<p align="center"><em>Example card: front (left) and back (right)</em></p>
 
 ---
 
@@ -92,7 +97,8 @@ pip install -e .
 4. **`script/push_notes.py --apply`** (Anki must be running): creates or updates the note type, the deck and the notes. Without `--apply` it is a dry run.
    Rerunning only updates notes whose content changed; notes that are no longer generated are listed, never deleted.
 5. **`script/add_audio.py --apply`**: adds the audio to the notes. Clips are stored once, so rerunning only creates what is missing.
-6. **`script/push_explanations.py --apply`**: copies the explanations in [`notes/`](notes/) into the `Explanation` field, shown collapsed at the bottom of the back.
+6. **`script/push_explanations.py --apply`**: copies the explanations in [`notes/`](notes/) into the `Explanation` field, shown collapsed on the back (one section per note, titled by its `# title` line).
+   A note named after a form goes on that form's cards automatically: `notes/n5-masu.md` → every ます card (the key is the form's name in `script/conjugate.py`, the prefix its JLPT level).
    Images (the flowcharts in [`tex/`](tex/), compiled to SVG) are uploaded to Anki's media folder. Edit the files, never the field.
 
 The conjugation rules and the list of forms live in [`script/conjugate.py`](script/conjugate.py): to add or remove a form, edit `FORMS` there and push again.

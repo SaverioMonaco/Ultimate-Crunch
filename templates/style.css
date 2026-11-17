@@ -152,6 +152,14 @@ rt {
   letter-spacing: 0.05em;
 }
 
+.explanation p, .explanation ul {
+  margin: 0.4em 0;
+}
+
+.explanation ul {
+  padding-left: 1.2em;
+}
+
 .explanation table {
   width: 100%;          /* full card width; long cells wrap instead of scrolling */
   border-collapse: collapse;
@@ -257,7 +265,7 @@ rt {
   opacity: 1;
 }
 
-.flow b, .verdict b, .explanation td strong {
+.flow b, .verdict b, .explanation strong {
   color: var(--accent);
   font-weight: normal;
 }

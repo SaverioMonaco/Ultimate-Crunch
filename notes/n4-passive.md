@@ -1,0 +1,11 @@
+# Passive
+
+
+
+#### Meaning
+
+- 
+- 
+
+#### Tone
+

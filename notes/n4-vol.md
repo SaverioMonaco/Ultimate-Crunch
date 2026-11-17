@@ -1,0 +1,11 @@
+# Volitional
+
+
+
+#### Meaning
+
+- 
+- 
+
+#### Tone
+

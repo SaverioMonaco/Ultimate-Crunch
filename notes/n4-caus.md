@@ -1,0 +1,11 @@
+# Causative
+
+
+
+#### Meaning
+
+- 
+- 
+
+#### Tone
+

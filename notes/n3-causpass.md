@@ -1,0 +1,11 @@
+# Causative-passive
+
+
+
+#### Meaning
+
+- 
+- 
+
+#### Tone
+
