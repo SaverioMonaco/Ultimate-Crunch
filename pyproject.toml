@@ -1,0 +1,19 @@
+[project]
+name = "ultimate-crunch"
+version = "0.1.0"
+description = "Helper scripts for the Ultimate-Crunch Japanese conjugation Anki deck"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "fugashi",
+    "unidic-lite",
+    "requests",
+    "edge-tts",
+]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = []

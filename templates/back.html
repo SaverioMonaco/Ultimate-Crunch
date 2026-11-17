@@ -1,0 +1,53 @@
+<div class="header">
+  <div class="jlpt">{{#JLPT}}JLPT: N{{JLPT}}{{/JLPT}}</div>
+  <div class="topic">{{#Topic}}{{Topic}}{{/Topic}}</div>
+</div>
+<div class="instruction">{{Instruction}}</div>
+<div class="sentence"><span id="sm">{{Sentence}}</span>{{#SentenceMod}}<span
+    class="modifier">({{SentenceMod}})</span>{{/SentenceMod}}</div>
+{{#Translation}}<div class="translation">{{Translation}}</div>{{/Translation}}
+{{#Audio}}<div class="extra">{{Audio}}</div>{{/Audio}}
+<hr id=answer>
+{{#Example}}<div class="example">
+  <div class="example-ja">{{furigana:Example}}</div>
+  <div class="example-en">{{ExampleTranslation}}</div>
+  {{#ExampleAudio}}<div class="extra">{{ExampleAudio}}</div>{{/ExampleAudio}}
+  {{#ExampleSrc}}<small class="source">{{ExampleSrc}}</small>{{/ExampleSrc}}
+</div>{{/Example}}
+
+<script>
+  (function () {
+    // Back: every #answer# in the Sentence is shown in bold (orange via the CSS).
+    var SHOW = true;
+    var el = document.getElementById("sm");
+    if (!el) return;
+
+    // The front renders the real answer too, just invisible, so both sides
+    // have the same widths and line breaks (a row of spaces wraps differently).
+    // A plain space before an opening # only separates furigana; drop it.
+    var src = el.innerHTML.replace(/ #(?=[一-鿿々〆])/g, "#");
+    var parts = src.split(/(<[^>]*>)/); // "#" inside tags (e.g. color="#333") is not a marker
+    var out = "", hidden = false, empty = true;
+    for (var i = 0; i < parts.length; i++) {
+      var p = parts[i];
+      if (i % 2) { out += p; continue; }
+      var segs = p.split("#");
+      for (var k = 0; k < segs.length; k++) {
+        if (k) {
+          if (hidden && empty && !SHOW) out += '<b class="target">　</b>';
+          hidden = !hidden;
+          empty = true;
+        }
+        var s = segs[k];
+        if (!s) continue;
+        if (!hidden) out += s;
+        else { out += '<b class="target">' + s + "</b>"; empty = false; }
+      }
+    }
+
+    el.innerHTML = out.replace(
+      /\s?([一-鿿々〆]+)\[([^\]]+)\]/g,
+      "<ruby>$1<rt>$2</rt></ruby>"
+    );
+  })();
+</script>

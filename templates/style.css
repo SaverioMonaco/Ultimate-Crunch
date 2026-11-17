@@ -1,0 +1,186 @@
+/* Accent color: the highlighted answer and any bold text.
+   Keep one line active; uncomment another to switch. */
+:root {
+  --accent: #4fc3f7;    /* light blue (default) */
+  /* --accent: #ff8c00; */  /* orange */
+  /* --accent: #10b981; */  /* emerald green */
+  /* --accent: #f87171; */  /* soft red */
+  /* --accent: #facc15; */  /* golden yellow */
+}
+
+html {
+  overflow-y: scroll;
+}
+
+.card {
+  font-family: "Yu Gothic", "Meiryo", "Hiragino Sans", "Noto Sans CJK JP", "Noto Sans JP", sans-serif;
+  font-size: 22px;
+  line-height: 1.5;
+  text-align: left;
+  color: white;
+  background-color: #2f2f31;
+  padding: 16px;
+}
+
+.card .sentence {
+  color: white !important;
+}
+
+.card .sentence *, .card .translation * {
+  color: inherit !important;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.5em;
+  min-height: 1.4em;
+  margin-bottom: 0.8em;
+  font-size: 0.65em;
+  line-height: 1.4;
+  color: #b0b0b0;
+}
+
+.jlpt {
+  text-align: left;
+  letter-spacing: 0.1em;
+}
+
+.topic {
+  text-align: left;
+  letter-spacing: 0.1em;
+}
+
+.topic:empty {
+  display: none;
+}
+
+.header .source {
+  text-align: right;
+  margin-left: auto;
+}
+
+.instruction {
+  color: #b0b0b0;
+  margin-bottom: 0.3em;
+}
+
+.sentence {
+  font-size: 1.4em;
+  line-height: 2.1;
+  min-height: 2.1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.9em;
+  padding-top: 0.3em;
+  letter-spacing: 0;
+  /* Do not break inside Japanese words; break only at spaces */
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+ruby {
+  ruby-position: over;
+}
+
+rt {
+  font-size: 0.45em;
+  line-height: 1;
+}
+
+.card .sentence rt, .card .translation rt {
+  color: #b0b0b0 !important;
+}
+
+/* Secondary: smaller and grey, so the sentence stays the focus */
+.card .translation {
+  color: #9a9a9a !important;
+  font-size: 0.8em;
+  margin-top: 0.4em;
+  margin-bottom: 0.6em;
+}
+
+.modifier {
+  color: #b0b0b0;
+  font-size: 0.6em;
+  margin-left: 0.5em;
+  white-space: nowrap;
+}
+
+/* Beats ".card .sentence *" so the modifier matches the JLPT/Topic color */
+.card .sentence .modifier,
+.card .sentence .modifier * {
+  color: #b0b0b0 !important;
+}
+
+.source {
+  color: #b0b0b0;
+}
+
+.card a, .card a:link, .card a:visited, .card a:hover, .card a:active {
+  color: #8ab4f8 !important;
+  text-decoration: underline;
+}
+
+.extra {
+  margin-top: 0.4em;
+}
+
+.replay-button svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Example sentence from Tatoeba, under the answer */
+.example {
+  margin: 0.6em 0 0.8em;
+}
+
+.example-ja {
+  font-size: 1em;
+  line-height: 2;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.card .example rt {
+  color: #b0b0b0 !important;
+}
+
+.card .example-en {
+  color: #9a9a9a !important;
+  font-size: 0.8em;
+}
+
+.example .source {
+  font-size: 0.55em;
+}
+
+/* Orange bold: keep this block LAST */
+.card .sentence b, .card .sentence strong,
+.card .translation b, .card .translation strong,
+.card .example-ja b, .card .example-ja strong,
+.card .sentence [style*="font-weight: bold"], .card .sentence [style*="font-weight:bold"],
+.card .sentence [style*="font-weight: bolder"], .card .sentence [style*="font-weight:bolder"],
+.card .sentence [style*="font-weight: 500"], .card .sentence [style*="font-weight:500"],
+.card .sentence [style*="font-weight: 600"], .card .sentence [style*="font-weight:600"],
+.card .sentence [style*="font-weight: 700"], .card .sentence [style*="font-weight:700"],
+.card .sentence [style*="font-weight: 800"], .card .sentence [style*="font-weight:800"],
+.card .sentence [style*="font-weight: 900"], .card .sentence [style*="font-weight:900"],
+.card .translation [style*="font-weight: bold"], .card .translation [style*="font-weight:bold"],
+.card .translation [style*="font-weight: 700"], .card .translation [style*="font-weight:700"] {
+  color: var(--accent) !important;
+}
+
+/* Front: the answer is laid out exactly as on the back (same width, same line
+   breaks) but drawn invisible and underlined. After the orange block so it wins. */
+.card .sentence b.gap,
+.card .sentence b.gap *,
+.card .sentence .gap rt {
+  color: transparent !important;
+}
+
+.card .sentence b.gap {
+  border-bottom: 2px solid #b0b0b0;
+  user-select: none;
+}
