@@ -179,6 +179,133 @@ rt {
   color: #b0b0b0;
 }
 
+/* Recognition flowchart (script/recognize.py): the verb's path is lit, the rest dimmed */
+.flow {
+  margin: 0.6em 0;
+}
+
+.flow .row {
+  display: flex;
+  flex-wrap: wrap;          /* the answer drops below its question on narrow screens */
+  align-items: center;
+  gap: 0.3em 0.6em;
+}
+
+/* Sound-before-る row: question and Ichidan aligned at the top, the
+   exception hanging under Ichidan */
+.flow .row.top, .flow .side.top {
+  align-items: flex-start;
+}
+
+.flow .row.top, .flow .side.top {
+  flex-wrap: nowrap;        /* never wrap here, or "a, u, o" seems to start from Ichidan */
+}
+
+.flow .side.top .link {
+  padding-top: 0.4em;
+}
+
+.flow .branch {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.flow .side {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+}
+
+.flow .node {
+  background: #3c3c3f;
+  border: 1px solid #6a6a6e;
+  border-radius: 4px;
+  padding: 0.3em 0.7em;
+  opacity: 0.35;
+}
+
+.flow .node small {
+  display: block;
+  color: #b0b0b0;
+  font-size: 0.8em;
+}
+
+.flow .node.on {
+  opacity: 1;
+}
+
+.flow .a.irr { border-color: #f28b82; }
+.flow .a.godan { border-color: #f5a65b; }
+.flow .a.ichidan { border-color: #6fd3a0; }
+.flow .a.on { border-width: 2px; }
+
+.flow .link, .flow .down {
+  color: #6a6a6e;
+  opacity: 0.35;
+  font-size: 0.9em;
+}
+
+.flow .down {
+  padding: 0.2em 0 0.2em 0.9em;
+}
+
+.flow .link.on, .flow .down.on {
+  color: #b0b0b0;
+  opacity: 1;
+}
+
+.flow b, .verdict b, .explanation td strong {
+  color: var(--accent);
+  font-weight: normal;
+}
+
+.verdict {
+  margin: 0.5em 0;
+}
+
+/* Conjugation steps (script/steps.py): boxes joined by labelled arrows */
+.steps {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0.6em 0;
+}
+
+.steps .step {
+  background: #3c3c3f;
+  border: 1px solid #6a6a6e;
+  border-radius: 4px;
+  padding: 0.15em 0.7em;
+  font-size: 1.3em;
+  line-height: 2;
+}
+
+.steps .step.last {
+  border: 2px solid var(--accent);
+}
+
+.steps .step b {
+  color: var(--accent);
+  font-weight: normal;
+}
+
+.steps .step rt {
+  color: #b0b0b0;
+}
+
+.steps .arrow {
+  color: #6a6a6e;
+  padding: 0.2em 0 0.2em 0.9em;
+}
+
+.steps .arrow span {
+  color: #b0b0b0;
+  margin-left: 0.3em;
+}
+
 .replay-button svg {
   width: 24px;
   height: 24px;

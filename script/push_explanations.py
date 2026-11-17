@@ -1,7 +1,7 @@
 """Copy the explanations in notes/*.md into the notes' Explanation field.
 
 Each Markdown file is turned into HTML:
-- the "# title" line is dropped (the card shows its own title, see back.html);
+- the "# title" line becomes the title of a collapsed <details> section;
 - furigana uses the card syntax, 帰[かえ]る -> <ruby>;
 - an image like ![...](../tex/name.svg) is uploaded to Anki's media folder as
   _name.svg (the leading "_" keeps "Check Media" from deleting it) and linked.
@@ -29,8 +29,9 @@ NOTES = ROOT / "notes"
 
 # notes/<file>.md -> the cards that show it (an Anki search)
 EXPLANATIONS = {
-    "n5-verbclassification": f'"note:{NOTE_TYPE}"',
 }
+# Notes used by another script instead (not pushed here).
+USED_ELSEWHERE = {"n5-verbclassification": "recognize.py (the exceptions table)"}
 
 FURI = re.compile(r"([一-鿿々〆]+)\[([^\]]+)\]")
 IMG = re.compile(r'<img alt="([^"]*)" src="([^"]+)"\s*/?>')
@@ -40,7 +41,8 @@ def render(name):
     """-> (html, {media name: local path})"""
     path = NOTES / f"{name}.md"
     text = path.read_text(encoding="utf-8")
-    text = re.sub(r"\A#[^\n]*\n", "", text)  # title: shown by the template
+    title, _, text = text.partition("\n")
+    title = FURI.sub(r"<ruby>\1<rt>\2</rt></ruby>", title.lstrip("# ").strip())
     html = markdown.markdown(FURI.sub(r"<ruby>\1<rt>\2</rt></ruby>", text), extensions=["tables"])
     media = {}
 
@@ -50,6 +52,7 @@ def render(name):
         return f'<img alt="{m[1]}" src="_{src.name}">'
 
     html = IMG.sub(link, html)
+    html = f'<details class="explanation"><summary>{title}</summary>{html}</details>'
     return html.replace("\n", ""), media
 
 
@@ -59,7 +62,7 @@ def main():
     args = ap.parse_args()
 
     rendered = {name: render(name) for name in EXPLANATIONS}
-    unused = sorted(p.stem for p in NOTES.glob("*.md") if p.stem not in EXPLANATIONS)
+    unused = sorted(p.stem for p in NOTES.glob("*.md") if p.stem not in EXPLANATIONS and p.stem not in USED_ELSEWHERE)
     if unused:
         print(f"!! not in EXPLANATIONS (not pushed): {', '.join(unused)}")
 

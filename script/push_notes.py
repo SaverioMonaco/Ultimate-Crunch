@@ -3,6 +3,8 @@
 What a card is made of:
 - data/verbs.tsv        the verbs (edit by hand), see build_verbs.py
 - script/conjugate.py   the forms, their indications and English
+- script/steps.py       the Conjugation: how the form is built, step by step
+- script/recognize.py   the Recognition: ichidan/godan/irregular flowchart
 - data/examples.json    the Tatoeba example sentences, see build_examples.py
 - notes/*.md            the Explanation, see push_explanations.py
 - templates/            the card layout (front.html, back.html, style.css)
@@ -31,6 +33,8 @@ import requests
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from conjugate import FORM, FORMS  # noqa: E402
 from furigana import annotate  # noqa: E402
+from recognize import recognize_html  # noqa: E402
+from steps import steps_html  # noqa: E402
 from verbs import load_verbs  # noqa: E402
 
 NOTE_TYPE = "Crunch Fill"
@@ -43,7 +47,7 @@ TEMPLATES = ROOT / "templates"
 EXAMPLES = ROOT / "data" / "examples.json"
 
 FIELDS = ["Sentence", "SentenceMod", "Translation", "Audio", "JLPT", "Instruction", "Topic",
-          "Example", "ExampleTranslation", "ExampleAudio", "ExampleSrc", "VerbType", "Explanation", "Key"]
+          "Example", "ExampleTranslation", "ExampleAudio", "ExampleSrc", "VerbType", "Conjugation", "Recognition", "Explanation", "Key"]
 # Fields this script owns; Audio and ExampleAudio belong to add_audio.py,
 # Explanation to push_explanations.py.
 OWNED = [f for f in FIELDS if f not in ("Audio", "ExampleAudio", "Explanation")]
@@ -125,6 +129,8 @@ def build():
                 "Instruction": INSTRUCTION,
                 "Topic": TOPIC.get(v.cls, "五段動詞" if v.cls.startswith("v5") else v.cls),
                 "VerbType": verb_type(v.cls),
+                "Conjugation": steps_html(v, key),
+                "Recognition": recognize_html(v),
                 "Key": k,
                 **example_fields(examples.get(k)),
             }
