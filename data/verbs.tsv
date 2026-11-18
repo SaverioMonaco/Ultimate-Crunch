@@ -35,7 +35,7 @@ N5	借りる	かりる	v1	vt	to borrow
 N5	消える	きえる	v1	vi	to vanish
 N5	聞く	きく	v5k	vt	to hear
 N5	切る	きる	v5r	vt	to cut
-N5	着る	きる	v1	vt	to put on (clothes above your waist)
+N5	着る	きる	v1	vt	to put on (clothes above the waist)
 N5	曇る	くもる	v5r	vi	to become cloudy
 N5	来る	くる	vk	vi	to come
 N5	消す	けす	v5s	vt	to erase
@@ -83,7 +83,7 @@ N5	上る	のぼる	v5r	vi	to climb
 N5	飲む	のむ	v5m	vt	to drink
 N5	乗る	のる	v5r	vi	to get on
 N5	入る	はいる	v5r	vi	to enter
-N5	掃く	はく	v5k	vt	to put on (items below your waist)
+N5	掃く	はく	v5k	vt	to put on (items below the waist)
 N5	走る	はしる	v5r	vi	to run
 N5	働く	はたらく	v5k	vi	to work
 N5	話す	はなす	v5s	vt	to speak
@@ -101,7 +101,7 @@ N5	見る	みる	v1	vt	to see
 N5	持つ	もつ	v5t	vt,vi	to hold
 N5	休む	やすむ	v5m	vi	to rest
 N5	やる	やる	v5r	vt,vi	to do
-N5	呼ぶ	よぶ	v5b	vt	to call (one's name)
+N5	呼ぶ	よぶ	v5b	vt	to call (a name)
 N5	読む	よむ	v5m	vt	to read
 N5	わかる	わかる	v5r	vi	to understand
 N5	忘れる	わすれる	v1	vt	to forget
@@ -129,7 +129,7 @@ N4	壊れる	こわれる	v1	vi	to be broken
 N4	揺れる	ゆれる	v1	vi	to shake
 N4	落ちる	おちる	v1	vi	to fall
 N4	祈る	いのる	v5r	vt	to pray
-N4	起こす	おこす	v5s	vt	to wake (someone) up
+N4	起こす	おこす	v5s	vt	to wake up (a person)
 N4	噛む	かむ	v5m	vt	to bite
 N4	思う	おもう	v5u	vt	to think
 N4	申し上げる	もうしあげる	v1	vt	to say
@@ -143,7 +143,7 @@ N4	逃げる	にげる	v1	vi	to escape
 N4	包む	つつむ	v5m	vt	to wrap
 N4	飾る	かざる	v5r	vt	to decorate
 N4	止める	とめる	v1	vt	to stop (something)
-N4	頑張る	がんばる	v5r	vi	to try one's best
+N4	頑張る	がんばる	v5r	vi	to try hard
 N4	投げる	なげる	v1	vt	to pitch
 N4	受ける	うける	v1	vt,vi	to take (an examination, interview, etc.)
 N4	間違える	まちがえる	v1	vt	to make a mistake
@@ -266,18 +266,18 @@ N3	救う	すくう	v5u	vt	to rescue from
 N3	優れる	すぐれる	v1	vi	to surpass
 N3	過ごす	すごす	v5s	vt	to pass
 N3	進める	すすめる	v1	vt	to advance
-N3	勧める	すすめる	v1	vt	to urge (someone) to do (something)
+N3	勧める	すすめる	v1	vt	to urge (to do something)
 N3	済ませる	すませる	v1	vt	to be finished
 N3	澄む	すむ	v5m	vi	to clear (e.g., weather)
 N3	刷る	する	v5r	vt	to print
 N3	愛する	あいする	vs-s	vt	to love
 N3	諦める	あきらめる	v1	vt	to give up
 N3	飽きる	あきる	v1	vi	to get tired of
-N3	預かる	あずかる	v5r	vt	to keep (something) for (someone)
+N3	預かる	あずかる	v5r	vt	to keep (something in custody)
 N3	預ける	あずける	v1	vt	to give into custody
 N3	与える	あたえる	v1	vt	to give
 N3	温まる	あたたまる	v5r	vi	to warm up
-N3	温める	あたためる	v1	vt	to warm (up to someone/something)
+N3	温める	あたためる	v1	vt	to warm (up)
 N3	当たる	あたる	v5r	vt,vi	to be hit
 N3	扱う	あつかう	v5u	vt	to treat
 N3	当てる	あてる	v1	vt	to hit
@@ -340,7 +340,7 @@ N3	隠す	かくす	v5s	vt	to hide
 N3	隠れる	かくれる	v1	vi	to hide
 N3	欠ける	かける	v1	vi	to be lacking
 N3	囲む	かこむ	v5m	vt	to surround
-N3	重なる	かさなる	v5r	vi	to be piled up, lie on top of one another
+N3	重なる	かさなる	v5r	vi	to be piled up
 N3	重ねる	かさねる	v1	vt	to pile up
 N3	稼ぐ	かせぐ	v5g	vt,vi	to earn income
 N3	数える	かぞえる	v1	vt	to count
@@ -388,7 +388,7 @@ N3	刺す	さす	v5s	vt	to sting
 N3	指す	さす	v5s	vt	to point
 N3	さす	さす	v5s	vt	to pour (drink)
 N3	射す	さす	v5s	vi	to shine
-N3	誘う	さそう	v5u	vt	to invite (someone to do something with you)
+N3	誘う	さそう	v5u	vt	to invite
 N3	守る	まもる	v5r	vt	to protect
 N3	迷う	まよう	v5u	vi	to be puzzled
 N3	満ちる	みちる	v1	vi	to be full
@@ -496,13 +496,13 @@ N3	閉じる	とじる	v1	vt,vi	to close (e.g., book, eyes)
 N3	届く	とどく	v5k	vi	to reach
 N3	飛ばす	とばす	v5s	vt	to skip over
 N3	飛び出す	とびだす	v5s	vi	to jump out
-N3	泊める	とめる	v1	vt	to have someone stay (over night)
+N3	泊める	とめる	v1	vt	to put up (for the night)
 N3	取り上げる	とりあげる	v1	vt	to take up
 N3	取れる	とれる	v1	vt,vi	to come off
 N3	流す	ながす	v5s	vt,vi	to drain
 N3	眺める	ながめる	v1	vt	to view
 N3	流れる	ながれる	v1	vi	to flow
-N3	亡くす	なくす	v5s	vt	to lose someone
+N3	亡くす	なくす	v5s	vt	to lose (a person, to death)
 N3	殴る	なぐる	v5r	vt	to strike
 N3	怠ける	なまける	v1	vt,vi	to be idle
 N3	悩む	なやむ	v5m	vi	to agonize
@@ -557,7 +557,7 @@ N3	減らす	へらす	v5s	vt	to decrease
 N3	減る	へる	v5r	vi	to decrease (in size or number)
 N3	吠える	ほえる	v1	vi	to bark
 N3	微笑む	ほほえむ	v5m	vi	to smile
-N3	任せる	まかせる	v1	vt	to entrust to another
+N3	任せる	まかせる	v1	vt	to entrust
 N3	巻く	まく	v5k	vt,vi	to wind
 N3	まく	まく	v5k	vt	to sow (seeds)
 N3	混ざる	まざる	v5r	vi	to be mixed
@@ -575,7 +575,7 @@ N3	沿う	そう	v5u	vi	to run along
 N3	添う	そう	v5u	vi	to accompany
 N3	高まる	たかまる	v5r	vi	to rise
 N3	断つ	たつ	v5t	vt	to sever
-N3	継ぐ	つぐ	v5g	vt	to succeed (someone in a business or inheritance
+N3	継ぐ	つぐ	v5g	vt	to succeed (to a business or inheritance)
 N3	摘む	つむ	v5m	vt	to pluck
 N3	強まる	つよまる	v5r	vi	to get strong
 N3	強める	つよめる	v1	vt	to strengthen

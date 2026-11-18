@@ -67,7 +67,7 @@ FORMS = [
     Form("proh", 4, "prohibition", "Don't {V}!"),
     Form("passive", 4, "passive", "{passive}"),
     Form("caus", 4, "causative", "Make/let (someone) {V}"),
-    Form("honor", 4, "honorific", "{Vs} (someone you respect)", "keigo"),
+    Form("honor", 4, "honorific", "{Vs} (honorific)", "keigo"),
     Form("humble", 4, "humble", "(I) {V} (humble)", "keigo"),
     # N3
     Form("causpass", 3, "causative-passive", "Is made to {V}"),
