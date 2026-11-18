@@ -9,5 +9,9 @@ TSV = Path(__file__).resolve().parent.parent / "data" / "verbs.tsv"
 
 def load_verbs():
     with open(TSV, encoding="utf-8") as f:
-        return [Verb(r["verb"], r["reading"], r["class"], r["trans"], r["english"], int(r["level"][1]))
-                for r in csv.DictReader(f, delimiter="\t")]
+        verbs = []
+        for r in csv.DictReader(f, delimiter="\t"):
+            v = Verb(r["verb"], r["reading"], r["class"], r["trans"], r["english"], int(r["level"][1]))
+            v.essential = r.get("essential") == "1"  # see build_essential.py
+            verbs.append(v)
+        return verbs

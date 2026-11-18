@@ -134,6 +134,8 @@ def build():
             }
             tags = [f"UC::N{level}", f"UC::form::{key}", f"UC::verb::N{v.level}",
                     f"UC::type::{verb_type(v.cls).lower()}"]
+            if v.essential:
+                tags.append("UC::essential")
             notes.append({"fields": fields, "tags": tags, "order": (-level, FORMS.index(f), i)})
     # New cards come in this order: N5 first, then form by form (all ます
     # cards, then ません...), verbs in list order.

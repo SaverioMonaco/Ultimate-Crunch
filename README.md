@@ -30,7 +30,7 @@ That is on purpose. As [Tae Kim's Guide to Japanese](https://guidetojapanese.org
 >
 > 食べる。 Eat. (possible translations include: I eat/she eats/they eat)
 >
-> — Tae Kim, *A Guide to Japanese Grammar*, "Verb Basics"
+> - Tae Kim, *A Guide to Japanese Grammar*, "Verb Basics"
 
 Adding "I", "it" or "you" would add information that is not in the Japanese, so the cards leave it out.
 The exceptions are a few forms that read badly in English without one, where the subject is added in parentheses: the conditionals "If (one) eats", the causative "Make/let (someone) eat" and the humble form "(I) eat (humble)".
@@ -55,7 +55,11 @@ If you find an error, please [open an issue](../../issues) or a pull request. Co
 | N3 | 347 | causative-passive, ずに |
 
 Cards are tagged `UC::N5`, `UC::form::nai`, `UC::verb::N4`, `UC::type::godan`, ... so you can filter or suspend by level, form or verb type.
-The verb type is also in the `VerbType` field and shown on the back of the card (see [Verb types](#verb-types)).
+
+### A smaller deck: the essential verbs
+
+8000 cards are a lot. The 100 most common verbs are tagged `UC::essential`: which are about 2300 cards.
+To study only those, open the Browse window, search `tag:UC::* -tag:UC::essential`, select all and suspend (Cards > Toggle Suspend).
 
 ---
 
@@ -109,10 +113,11 @@ pip install -e .
    The TSV is meant to be **edited by hand** afterwards (fix a gloss, drop a verb, change a level). Rerunning the script overwrites it.
 3. **`script/build_examples.py`**: finds a Tatoeba sentence for every (verb, form) pair and writes [`data/examples.json`](data/examples.json).
    A sentence matches only if it contains the exact conjugated form (食べない matches 「もう食べない。」 but not 「食べないで」). To drop a bad example, delete its entry or add `"skip": true`.
-4. **`script/push_notes.py --apply`** (Anki must be running): creates or updates the note type, the deck and the notes. Without `--apply` it is a dry run.
+4. **`script/build_essential.py`**: counts how often each verb appears in Tatoeba and fills the `freq` and `essential` columns of [`data/verbs.tsv`](data/verbs.tsv) (the 100 most frequent get `essential = 1`, tagged `UC::essential`). The column can be edited by hand; rerunning the script overwrites it.
+5. **`script/push_notes.py --apply`** (Anki must be running): creates or updates the note type, the deck and the notes. Without `--apply` it is a dry run.
    Rerunning only updates notes whose content changed; notes that are no longer generated are listed, never deleted.
-5. **`script/add_audio.py --apply`**: adds the audio to the notes. Clips are stored once, so rerunning only creates what is missing.
-6. **`script/push_explanations.py --apply`**: copies the explanations in [`notes/`](notes/) into the `Explanation` field, shown collapsed on the back (one section per note, titled by its `# title` line).
+6. **`script/add_audio.py --apply`**: adds the audio to the notes. Clips are stored once, so rerunning only creates what is missing.
+7. **`script/push_explanations.py --apply`**: copies the explanations in [`notes/`](notes/) into the `Explanation` field, shown collapsed on the back (one section per note, titled by its `# title` line).
    A note named after a form goes on that form's cards automatically: `notes/n5-masu.md` → every ます card (the key is the form's name in `script/conjugate.py`, the prefix its JLPT level).
    Images (the flowcharts in [`tex/`](tex/), compiled to SVG) are uploaded to Anki's media folder. Edit the files, never the field.
 
