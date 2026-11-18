@@ -29,7 +29,7 @@ If you find an error, please [open an issue](../../issues) or a pull request. Co
 
 ## Download
 
-- [AnkiWeb](<!-- link -->)
+- [AnkiWeb](https://ankiweb.net/shared/info/2103052727)
 
 ---
 
