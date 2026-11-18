@@ -167,7 +167,3 @@ If you just downloaded the deck, edit the same block directly in Anki: it is at 
 ## Contributing
 
 Found a wrong conjugation, a bad example sentence or a missing verb? Open an issue or a pull request.
-
-## TODO
-
-* Release
